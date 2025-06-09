@@ -1,8 +1,8 @@
 // src/App.jsx
 import React, { useState, useEffect, useCallback } from 'react';
 import questions from './data/questions'; // Correct import path for data
-import navbar from './components/navbar'; // Import Navbar
-import footer from './components/footer'; // Import Footer
+import Navbar from './components/Navbar'; // Import Navbar
+import Footer from './components/Footer'; // Import Footer
 import './App.css'; // Import the main App styles
 
 const SHUFFLE_DELAY_MS = 1000; // Delay before moving to next question after feedback
@@ -145,7 +145,7 @@ function App() {
       </div>
     </div>
         {/* Placing the footer */}
-    <footer />
+    <Footer />
     </>
   );
 }
