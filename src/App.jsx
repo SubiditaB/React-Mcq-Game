@@ -1,6 +1,8 @@
 // src/App.jsx
 import React, { useState, useEffect, useCallback } from 'react';
 import questions from './data/questions'; // Correct import path for data
+import navbar from './components/navbar'; // Import Navbar
+import footer from './components/footer'; // Import Footer
 import './App.css'; // Import the main App styles
 
 const SHUFFLE_DELAY_MS = 1000; // Delay before moving to next question after feedback
@@ -108,6 +110,11 @@ function App() {
   }
 
   return (
+    <>  
+    {/* Placing the navbar */}
+    <Navbar />
+
+    {/* Main content container, slightly adjusted */}
     <div className="app-container quiz-container">
       <div className="quiz-header">
         <div className="progress-indicator">
@@ -137,6 +144,9 @@ function App() {
         ))}
       </div>
     </div>
+        {/* Placing the footer */}
+    <footer />
+    </>
   );
 }
 

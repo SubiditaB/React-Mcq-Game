@@ -1,0 +1,30 @@
+/* src/components/Footer.css */
+.footer {
+  background-color: var(--background-dark); /* Darker background for contrast */
+  color: var(--text-light);
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 50px; /* Space above the footer */
+  width: 100%; /* Ensure it spans full width */
+}
+
+.footer-container {
+  max-width: 1000px; /* Align with Navbar width */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer p {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+.footer a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
